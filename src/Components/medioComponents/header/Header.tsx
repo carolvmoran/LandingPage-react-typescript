@@ -1,13 +1,14 @@
 import React from "react";
 
 import Logo from "../../../assets/logo.png";
+import { Image } from "../../miniComponents/ImagesComponent/Image";
+
+import "./Header.scss";
 
 const Header = () => {
   return (
-    <header>
-      <figure>
-        <img src={Logo} alt="Logo" />
-      </figure>
+    <header className="header">
+      <Image src={Logo} alt="Logo" />
     </header>
   );
 };
